@@ -40,7 +40,7 @@ const NavBar = () => {
 
       <nav className="flex justify-center items-center flex-wrap ">
         <motion.a
-          href="https://instagram.com/winf_23"
+          href="https://instagram.com/fzn7289"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
