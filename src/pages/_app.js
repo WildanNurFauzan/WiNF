@@ -1,5 +1,7 @@
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import "@/styles/globals.css";
+import "@/styles/footer.css"
 import { Montserrat, Silkscreen } from "next/font/google";
 
 const montserrat = Montserrat({
@@ -24,6 +26,7 @@ export default function App({ Component, pageProps }) {
       <main className={`${montserrat.variable} font-montserrat bg-light w-full min-h-screen`}>
         <NavBar />
         <Component {...pageProps} />
+        <Footer/>
       </main>
     </>
   );

@@ -1,0 +1,40 @@
+.custom-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Circular Text */
+.link-mubeng {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url(circle-star.svg);
+  background: cover;
+  background: center;
+  background: no-repeat;
+  z-index: 9999;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-circular-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25vh;
+  height: auto;
+  animation: spin 5s linear infinite;
+  fill: #1b1b1b;
+}
