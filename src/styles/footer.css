@@ -1,6 +1,7 @@
 .custom-item {
   display: flex;
   align-items: center;
+  background-color: #0000;
 }
 
 /* Circular Text */
@@ -36,5 +37,7 @@
   width: 25vh;
   height: auto;
   animation: spin 5s linear infinite;
-  fill: #1b1b1b;
+  fill: #4a0404;
 }
+
+/*  */
