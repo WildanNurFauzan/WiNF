@@ -14,7 +14,8 @@ const svgVariants = {
 
 const HireMe = () => {
   return (
-    <Link href={"/"} className="link-mubeng">
+	<div className="fixed">
+    <div  className="link-mubeng">
       <motion.svg
         x="4px"
         y="4px"
@@ -587,7 +588,16 @@ M424.818420,332.394531
 z"
         />
       </motion.svg>
-    </Link>
+
+	  <Link href="/" className="flex items-center justify-center absolute
+	  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border border-solid
+	  border-dark w-20 h-20 rounded-full font-semibold hover:bg-light hover:text-dark">
+
+		Hii!
+
+	  </Link>
+    </div>
+	</div>
   );
 };
 

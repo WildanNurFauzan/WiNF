@@ -21,7 +21,11 @@ const Footer = () => {
         <div className="custom-item ">
           Build With{" "}
           <span className="text-primary text-2xl px-1">&#9825; </span> by&nbsp;
-          <motion.a href="https:xyz.xyz" target={"_blank"} whileHover={{y:-2}}>
+          <motion.a
+            href="https:xyz.xyz"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+          >
             WiNF
           </motion.a>
         </div>
