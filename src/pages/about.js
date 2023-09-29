@@ -6,15 +6,14 @@ import Layout from "@/components/Layout";
 import sementaraG from "../../public/images/hajdg.jpg";
 import { useMotionValue, useSpring, useInView } from "framer-motion";
 import ConfettiParticles from "@/components/ConfettiParticles";
-
-
+import Skill from "@/components/Skill";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
 
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
@@ -42,9 +41,12 @@ const about = () => {
       </Head>
       <main className="flex flex-col w-full items-center justify-center">
         <Layout className="pt-16">
-          <ConfettiParticles/>
-          
-          <AnimatedText text="LOrem" className="mb-16" />
+          <ConfettiParticles />
+
+          <AnimatedText
+            text="Passion is Choiced!"
+            className="flex justify-center pb-16  "
+          />
           <div className="grid grid-cols-6 w-full gap-16">
             <div className=" col-span-3 flex flex-col items-start justify-start ">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
@@ -106,6 +108,7 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skill />
         </Layout>
       </main>
     </>
