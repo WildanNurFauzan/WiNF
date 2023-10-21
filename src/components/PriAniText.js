@@ -28,11 +28,11 @@ const singleWord = {
   },
 };
 
-const AnimatedText = ({ text, className = "" }) => {
+const PriAniText = ({ text, className = "" }) => {
   return (
     <div className="w-full mx-auto py-2 flex items-center justify-center  overflow-hidden">
       <motion.h1
-        className={` w-full text-dark font-bold  text-6xl inline-block 
+        className={` w-full text-primary font-bold  text-6xl inline-block 
          items-center ${className}`}
         variants={quote}
         initial="initial"
@@ -54,4 +54,5 @@ const AnimatedText = ({ text, className = "" }) => {
   );
 };
 
-export default AnimatedText;
+export default PriAniText;
+

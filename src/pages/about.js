@@ -7,6 +7,8 @@ import sementaraG from "../../public/images/hajdg.jpg";
 import { useMotionValue, useSpring, useInView } from "framer-motion";
 import ConfettiParticles from "@/components/ConfettiParticles";
 import Skill from "@/components/Skill";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -109,6 +111,9 @@ const about = () => {
             </div>
           </div>
           <Skill />
+          <Experience/>
+          <Education/>
+          
         </Layout>
       </main>
     </>
