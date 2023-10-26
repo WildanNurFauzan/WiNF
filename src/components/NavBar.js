@@ -9,7 +9,6 @@ import GithubIcon from "@/icons/GithubIcon";
 import LInkedinIcon from "@/icons/LInkedinIcon";
 import { motion } from "framer-motion";
 
-
 // Isi
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -31,15 +30,19 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const NavBar = () => {
   return (
-   
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between  ">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="mx-4" />
-        <Link href="/connect" className="ml-4 bg-dark rounded-lg p-[12px] font-semibold text-light" >
+        <CustomLink
+          title="Connect"
+          href="/connect"
+          
+          className="ml-4 "
+        >
           Connect
-        </Link>
+        </CustomLink>
       </nav>
 
       <nav className="flex justify-center items-center flex-wrap ">
@@ -84,7 +87,6 @@ const NavBar = () => {
         <Logo />
       </div>
     </header>
-    
   );
 };
 

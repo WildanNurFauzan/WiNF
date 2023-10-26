@@ -16,7 +16,7 @@ const Footer = () => {
         "font-medium w-full border-t-2 border-solid border-dark  text-lg"
       }
     >
-      <Layout className="flex justify-between py-8 items-center">
+      <Layout className="font-silkscreen flex justify-between py-8 items-center">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
         <div className="custom-item ">
           Build With{" "}

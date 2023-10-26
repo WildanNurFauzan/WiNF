@@ -22,7 +22,7 @@ const AmogusParticles = () => {
         autoPlay: true,
         background: {
           color: {
-            value: "",
+            value: "#1b1b1b",
           },
           image: "",
           position: "",
@@ -34,7 +34,7 @@ const AmogusParticles = () => {
           composite: "destination-out",
           cover: {
             color: {
-              value: "#1b1b1b",
+              value: "",
             },
             opacity: 1,
           },
@@ -219,7 +219,7 @@ const AmogusParticles = () => {
             },
           },
           color: {
-            value: "#1b1b1b",
+            value: "#fff",
             animation: {
               h: {
                 count: 0,
