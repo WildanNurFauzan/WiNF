@@ -18,7 +18,7 @@ const ParticlesContainer = () => {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      options={ {
+      options={{
         fullscreen: { enable: false },
         background: {
           color: {
@@ -51,6 +51,7 @@ const ParticlesContainer = () => {
         particles: {
           color: {
             value: "#26291f",
+          
           },
           links: {
             color: "#1d6969",
@@ -88,9 +89,8 @@ const ParticlesContainer = () => {
           size: {
             value: { min: 1, max: 5 },
           },
-         
         },
-        
+
         detectRetina: true,
       }}
     />

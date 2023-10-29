@@ -3,7 +3,7 @@ import { useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, typet, time, place, info }) => {
   const ref = useRef(null);
   return (
     <li
@@ -17,8 +17,11 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl">{type}</h3>
-        <span className="capitalize font-medium text-dark/75">
+        <div className="flex flex-row">
+        <h3 className="capitalize font-bold text-2xl">{type}&nbsp;</h3>
+        <h3 className="capitalize font-bold text-2xl text-primary">{typet}</h3>
+        </div>
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {place}
         </span>
         <p className="font-medium w-full">{info}</p>
@@ -40,23 +43,25 @@ const Education = () => {
       <div ref={ref} className="w-[75%] mx-auto relative  ">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-1 w-[4px] h-[97%] origin-top bg-dark"
+          className="absolute left-9 top-1 w-[4px] h-[97%] origin-top bg-dark dark:bg-light"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type="Online Coursework"
+            type="Online"
+            typet="Coursework"
             time="2023"
             place="SKill Academy"
             info="sjjs snsu usnns ushns usu nsjs hsjs hss jsjs bssbs usas ushasw uwsuhs"
           />
           <Details
-            type="Online Coursework"
+            type="Online"
             time="2023"
             place="SKill Academy"
             info="sjjs snsu usnns ushns usu nsjs hsjs hss jsjs bssbs usas ushasw uwsuhs"
           />
           <Details
-            type="Online Coursework"
+            type="Online"
+            typet="Coursework"
             time="2023"
             place="SKill Academy"
             info="sjjs snsu usnns ushns usu nsjs hsjs hss jsjs bssbs usas ushasw uwsuhs"

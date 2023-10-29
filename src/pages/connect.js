@@ -19,13 +19,13 @@ const connect = () => {
           {/* <div className="-z-999">
           <AmogusParticles />
           </div> */}
-          
+
           <AnimatedText
             text="Get in Touch"
             className="flex justify-center mb-16 text-primary"
           />
           <div className="flex relative border border-solid border-dark shadow-2xl rounded-br-2xl  rounded-3xl justify-center ">
-          <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl"/>
+            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
 
             <div className="flex w-full bg-[#B63E96] h-auto pb-10 rounded-[1.2rem] pt-12">
               <div className="w-[36rem] h-250   ">
@@ -47,7 +47,7 @@ const connect = () => {
                     Email
                   </div>
                   <div className="w-1/2 text-start pl-[5%] py-4 border rounded-2xl text-light">
-                    Phone 
+                    Phone
                   </div>
                 </div>
                 <div className="mt-4 text-start ml-8 w-[160%] h-[80%] py-4 bg-slate-600 border rounded-2xl pl-[5%]">

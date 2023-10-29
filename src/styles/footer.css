@@ -1,7 +1,7 @@
 .custom-item {
   display: flex;
   align-items: center;
-  background-color: #00000000;
+  background-color: #211b2900;
 }
 
 /* Circular Text */
@@ -18,6 +18,11 @@
   background: center;
   background: no-repeat;
   z-index: 9999;
+  fill: rgb(108, 65, 228);
+}
+
+.link-mubeng.dark {
+  fill: #fff;
 }
 
 @keyframes spin {
@@ -37,7 +42,8 @@
   width: 25vh;
   height: auto;
   animation: spin 5s linear infinite;
-  fill: #4a0404;
+  fill: #374787;
+  color: #374787;
 }
 
 /*  */

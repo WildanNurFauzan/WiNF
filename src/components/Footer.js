@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer
       className={
-        "font-medium w-full border-t-2 border-solid border-dark  text-lg"
+        "font-medium w-full border-t-2 border-solid border-dark  text-lg dark:text-light dark:border-light"
       }
     >
       <Layout className="font-silkscreen flex justify-between py-8 items-center">
