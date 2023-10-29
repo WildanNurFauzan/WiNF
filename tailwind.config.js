@@ -9,6 +9,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundImage : {
+        pixbg : "./src/images/pixbg.jpg"
+      },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
         silkscreen: ["var(--font-silkscreen)"],

@@ -69,7 +69,7 @@ const NavBar = () => {
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className={`w-6 mr-3 flex rounded-full ${
+          className={`w-6 mr-3 flex rounded-full  ${
             mode === "light" ? " text-light" : "bg-light text-dark"
           } `}
         >
@@ -80,9 +80,9 @@ const NavBar = () => {
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 mr-3"
+          className="w-6 mr-3 "
         >
-          <LInkedinIcon />
+          <LInkedinIcon className={`rounded-full`} />
         </motion.a>
 
         <button

@@ -86,6 +86,9 @@ const about = () => {
                 src={sementaraG}
                 alt="Shin"
                 className="w-full rounded-2xl h-auto"
+                priority
+                sizes="(max-width: 768px)100vw,
+              (max-width : 1200px)50vw, 33vw"
               />
             </div>
 
@@ -112,9 +115,8 @@ const about = () => {
             </div>
           </div>
           <Skill />
-          <Experience/>
-          <Education/>
-          
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
