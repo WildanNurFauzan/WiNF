@@ -9,8 +9,8 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundImage : {
-        pixbg : "./src/images/pixbg.jpg"
+      backgroundImage: {
+        pixbg: "./src/images/pixbg.jpg",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
@@ -32,6 +32,18 @@ module.exports = {
         circularDark:
           "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, #1b1b1b 7px, #1b1b1b 100px );",
       },
+    },
+    screens: {
+      "2xl": { max: "1535px" },
+      // => @media(max-width: 1535px) { ... }
+      xl: { max: "1279px" },
+      // => @media(max-width: 1279px) { ... }
+      lg: { max: "1023px" },
+      // => @media(max-width: 1023px) { ... }
+      md: { max: "767px" },
+      // => @media(max-width: 767px) { ... }
+      xs: { max: "479px" },
+      // => @media(max-width: 479px) { ... }
     },
   },
   plugins: [],
