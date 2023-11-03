@@ -40,6 +40,8 @@ module.exports = {
       // => @media(max-width: 1279px) { ... }
       lg: { max: "1023px" },
       // => @media(max-width: 1023px) { ... }
+      ia: { max: "821px" },
+      // => @media(max-width: 821px) { ... }
       md: { max: "767px" },
       // => @media(max-width: 767px) { ... }
       xs: { max: "479px" },
