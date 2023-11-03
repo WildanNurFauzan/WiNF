@@ -14,19 +14,23 @@ const svgVariants = {
 
 const HireMe = () => {
   return (
-    <div className="fixed">
-      <div className="link-mubeng ">
+    <div className="fixed ">
+      <div
+        className=" fixed bottom-4 left-4 flex items-center overflow-hidden justify-center 
+	    md:right-8 md:top-0 md:bottom-auto md:left-auto  "
+      >
         <motion.svg
           x="4px"
           y="4px"
           width="100%"
           viewBox="0 0 496 496"
-          className="custom-circular-text"
+          className="custom-circular-text w-[25vh] dark:fill-current dark:text-light md:w-24 "
           //  variants={svgVariants}
           //  initial="hidden"
           //  animate="visible"
         >
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -56,6 +60,7 @@ M234.709045,430.040100
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -84,6 +89,7 @@ M379.740540,353.090973
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -107,6 +113,7 @@ M404.923065,210.428818
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -131,6 +138,7 @@ M85.963989,328.533661
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -155,6 +163,7 @@ M128.225143,357.777740
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -180,6 +189,7 @@ M138.051636,118.566376
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -201,6 +211,7 @@ M381.562805,127.557220
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -221,6 +232,7 @@ M308.897095,74.802788
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -243,6 +255,7 @@ M395.040955,170.055115
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -265,6 +278,7 @@ M158.151840,387.453430
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -287,6 +301,7 @@ M316.005859,401.834656
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -310,6 +325,7 @@ M170.237640,96.635872
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -331,6 +347,7 @@ M85.425079,283.030640
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -354,6 +371,7 @@ M90.811874,209.906509
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -376,6 +394,7 @@ M419.422211,272.905731
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -395,6 +414,7 @@ M117.067680,166.564163
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -417,6 +437,7 @@ M357.585938,363.392609
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -443,6 +464,7 @@ M399.539093,309.052917
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -460,6 +482,7 @@ M100.407639,245.497864
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -473,6 +496,7 @@ M320.775604,123.902969
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -488,6 +512,7 @@ M317.695068,91.785583
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -502,6 +527,7 @@ M104.070251,183.053818
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -520,6 +546,7 @@ M205.841095,76.585159
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -538,6 +565,7 @@ M299.832794,420.840820
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -552,6 +580,7 @@ M382.979431,315.906677
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -564,6 +593,7 @@ M262.214569,401.264435
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -576,6 +606,7 @@ M236.399628,100.681534
 z"
           />
           <path
+            className="dark:fill-light"
             fill="#000000"
             opacity="1.000000"
             stroke="none"
@@ -595,7 +626,7 @@ z"
 	  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light shadow-md border border-solid
 	  border-dark w-20 h-20 rounded-full font-semibold hover:bg-light hover:text-dark
 	  
-	  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light Hahaha hover:dark:border-light "
+	  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light Hahaha hover:dark:border-light md:h-12 md:w-12 text-[10px]"
         >
           Hii!
         </Link>

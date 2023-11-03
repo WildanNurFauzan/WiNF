@@ -8,6 +8,8 @@ import React from "react";
 import sementaraG from "../../public/images/hajdg.jpg";
 import PriAniText from "@/components/PriAniText";
 import GithubForProject from "@/icons/GithubForProject";
+import StarryParticle from "@/components/StarryParticle";
+import TransitionEffect from "@/components/TransitionEffect";
 // import UseThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -117,8 +119,9 @@ const projects = () => {
         <title>Project Pages </title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
-        <Layout className="pt-16">
+        <Layout className={`pt-16 `}>
           <AnimatedText text="Imagination" className="flex justify-center " />
           <PriAniText text="Trumps" className="flex justify-center " />
 

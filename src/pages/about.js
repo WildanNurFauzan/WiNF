@@ -10,6 +10,7 @@ import Skill from "@/components/Skill";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import AmogusParticles from "@/components/AmogusParticles";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -42,6 +43,7 @@ const about = () => {
         <title>WiNF | About Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect/>
       <main className="flex flex-col w-full items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <ConfettiParticles className={"-z-10"} />

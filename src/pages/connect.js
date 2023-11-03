@@ -5,6 +5,7 @@ import Layout from "@/components/Layout";
 import contactImg from "../../public/images/svg/contact-img.svg";
 import Image from "next/image";
 import pixbg from "../../public/images/pixbg.jpg";
+import TransitionEffect from "@/components/TransitionEffect";
 // import AmogusParticles from "@/components/AmogusParticles";
 // import ConfettiParticles from "@/components/ConfettiParticles";
 
@@ -23,6 +24,7 @@ const connect = () => {
         <title>WiNF | Connect Page</title>
         <meta name="description" content="any description" />
       </Head>
+      <TransitionEffect/>
       <main>
         <Layout className={`relative  ${pixbg}`}>
           {/* <div className="-z-999">
