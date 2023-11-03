@@ -44,7 +44,7 @@ const Experience = () => {
   });
   return (
     <div className="my-[16rem]">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:!text-[57px]">
         Experience
       </h2>
 

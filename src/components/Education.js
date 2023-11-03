@@ -38,7 +38,7 @@ const Education = () => {
   });
   return (
     <div className="my-[16rem]">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">Education</h2>
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:!text-[57px]">Education</h2>
 
       <div ref={ref} className="w-[75%] mx-auto relative  ">
         <motion.div

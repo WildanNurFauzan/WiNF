@@ -17,7 +17,7 @@ const HireMe = () => {
     <div className="fixed ">
       <div
         className=" fixed bottom-4 left-4 flex items-center overflow-hidden justify-center 
-	    md:right-8 md:top-0 md:bottom-auto md:left-auto  "
+	    md:right-2 md:top-0 md:bottom-auto md:left-auto  "
       >
         <motion.svg
           x="4px"
