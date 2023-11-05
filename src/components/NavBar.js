@@ -66,7 +66,7 @@ const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8 ">
       <button
-        className=" flex-col justify-center items-center hidden lg:flex md:-ml-[1rem] lg:-ml-[2rem]"
+        className=" flex-col justify-center items-center  hidden ia:flex md:-ml-[1rem] lg:-ml-[2rem]"
         onClick={handleClick}
       >
         <span
@@ -75,7 +75,7 @@ const NavBar = () => {
           }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light flex items-start h-[3px] w-6 rounded-sm my-2 md:-ml-[15px]  ${
+          className={`bg-dark dark:bg-light flex items-start h-[3px] w-6 rounded-sm my-2 lg:-ml-[15px]  ${
             isOpen ? "opacity-0" : "opacity-100"
           }`}
         ></span>
@@ -85,7 +85,7 @@ const NavBar = () => {
           }`}
         ></span>
       </button>
-      <div className="w-full flex justify-between items-center lg:hidden">
+      <div className="w-full flex justify-between items-center ia:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />

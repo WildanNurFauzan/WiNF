@@ -31,6 +31,18 @@ module.exports = {
           "repeating-radial-gradient(rgba(0,0,0,0.7) 1px, #fff 5.5px, #fff 100px );",
         circularDark:
           "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, #1b1b1b 7px, #1b1b1b 100px );",
+        circularLightLg:
+          "repeating-radial-gradient(rgba(0,0,0,0.7) 2px, #fff 5.5px, #fff 91px );",
+        circularDarkLg:
+          "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, #1b1b1b 7px, #1b1b1b 91px );",
+        circularLightMd:
+          "repeating-radial-gradient(rgba(0,0,0,0.7) 2px, #fff 5.5px, #fff 72px );",
+        circularDarkMd:
+          "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, #1b1b1b 7px, #1b1b1b 72px );",
+        circularLightSm:
+          "repeating-radial-gradient(rgba(0,0,0,0.7) 2px, #fff 5.5px, #fff 60px );",
+        circularDarkSm:
+          "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, #1b1b1b 7px, #1b1b1b 60px );",
       },
     },
     screens: {
@@ -38,8 +50,8 @@ module.exports = {
       // => @media(max-width: 1535px) { ... }
       xl: { max: "1279px" },
       // => @media(max-width: 1279px) { ... }
-      lg: { max: "1023px" },
-      // => @media(max-width: 1023px) { ... }
+      lg: { max: "1025px" },
+      // => @media(max-width: 1025px) { ... }
       ia: { max: "821px" },
       // => @media(max-width: 821px) { ... }
       md: { max: "767px" },

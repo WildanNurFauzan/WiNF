@@ -50,21 +50,21 @@ export default function Home() {
                 offline volunteering . I am excited to connect with like-minded
                 professionals and continue to learn and grow in my field.
               </p>
-              <div className="flex items-center self-start mt-2 lg:!self-center ">
+              <div className="flex items-center self-start mt-2 lg:!self-center  ">
                 <Link
                   href="/"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg  font-semibold
                    hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
                    dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light Hahaha hover:dark:border-light
-                   "
+                    md:text-sm"
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
                   href="mailto:vellvester@gmail.com"
                   target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark dark:text-light"
+                  className="ml-4 text-lg font-medium capitalize text-dark dark:text-light md:text-sm"
                 >
                   Contact
                 </Link>
@@ -72,7 +72,7 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-        <HireMe className={`dark:fill-light`}/>
+        <HireMe className={`dark:fill-light z-[999999]`}/>
       </main>
     </>
   );

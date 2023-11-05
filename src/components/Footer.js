@@ -13,10 +13,10 @@ const Footer = () => {
   return (
     <footer
       className={
-        "font-medium w-full border-t-2 border-solid border-dark  text-lg dark:text-light dark:border-light"
+        "font-medium w-full border-t-2 border-solid border-dark  text-lg dark:text-light dark:border-light sm:text-base"
       }
     >
-      <Layout className="font-silkscreen flex justify-between py-8 items-center">
+      <Layout className="font-silkscreen flex justify-between py-8 items-center lg:flex-col lg:py-6">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
         <div className="custom-item ">
           Build With{" "}
