@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        pixbg: "./src/images/pixbg.jpg",
+        'pixbg': "url('/pixbg.jpg')",
+        site: 'url("/site-bg.svg")',
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
@@ -56,6 +57,8 @@ module.exports = {
       // => @media(max-width: 821px) { ... }
       md: { max: "767px" },
       // => @media(max-width: 767px) { ... }
+      sm: { max: "640px" },
+      // => @media(max-width: 640px) { ... }
       xs: { max: "479px" },
       // => @media(max-width: 479px) { ... }
     },

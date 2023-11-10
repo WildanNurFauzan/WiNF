@@ -34,14 +34,14 @@ export default function Home() {
               />
             </div>
 
-            <ParticlesContainer className={`-z-50 `} />
+            
 
             <div className="w-1/2  flex flex-col items-center self-center z-7 lg:w-full    ">
               <AnimatedText
                 text="Make your Imagination Come True with Code and Design "
                 className="!text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-3xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium md:text-[70%] lg:!text-center ">
+              <p className="my-4 text-base font-medium md:text-[90%] lg:!text-center ">
                 Hello, my name is Wildan Nur Fauzan. I&apos;m a student based in
                 Yogyakarta with a passion for creating innovative solutions to
                 real-world problems. I have been studying in UPNVY 2023 until
@@ -73,7 +73,9 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe className={`dark:fill-light z-[999999]`}/>
+        
       </main>
+      {/* <section className="under-hero"></section> */}
     </>
   );
 }

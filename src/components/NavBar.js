@@ -66,7 +66,7 @@ const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8 ">
       <button
-        className=" flex-col justify-center items-center  hidden ia:flex md:-ml-[1rem] lg:-ml-[2rem]"
+        className=" flex-col justify-center items-center  hidden ia:flex md:-ml-0 lg:-ml-[2rem]"
         onClick={handleClick}
       >
         <span
@@ -90,6 +90,7 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
+          <CustomLink href="/contact" title="Contact" className="mx-4" />
           <CustomLink title="Connect" href="/connect" className="ml-4 ">
             Connect
           </CustomLink>
@@ -179,6 +180,12 @@ const NavBar = () => {
             <CustomMobileLink
               title="Connect"
               href="/connect"
+              className=" "
+              toggle={handleClick}
+            />
+            <CustomMobileLink
+              title="Contact"
+              href="/contact"
               className=" "
               toggle={handleClick}
             />

@@ -10,43 +10,47 @@ import PriAniText from "@/components/PriAniText";
 import GithubForProject from "@/icons/GithubForProject";
 import StarryParticle from "@/components/StarryParticle";
 import TransitionEffect from "@/components/TransitionEffect";
+import ParticlesContainer from "@/components/ParticlesContainer";
 // import UseThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
-      className="w-full flex justify-between items-center rounded-3xl rounded-br-2xl 
-    border border-solid border-dark bg-light shadow-2xl p-[3rem] relative dark:bg-dark dark:border-light "
+      className="w-full flex  justify-between items-center rounded-3xl rounded-br-2xl 
+    border border-solid border-dark bg-light shadow-2xl p-[30px] relative dark:bg-dark dark:border-light 
+     ia:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ia:mb-10 "
     >
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
       <Link
         href={Link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg "
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg ia:w-full "
       >
         <Image
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-auto "
           priority
           sizes="(max-width: 768px)100vw,
               (max-width : 1200px)50vw, 50vw"
         />
       </Link>
 
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 ">
-        <span className="text-primary font-medium text-xl  ">{type}</span>
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 ia:w-full ia:pl-0 ia:pt-6 ">
+        <span className="text-primary font-medium text-xl xs:text-base  ">
+          {type}
+        </span>
         <Link
           href={Link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+          <h2 className="my-2 lg:mb-0 w-full text-left text-4xl lg:text-2xl  font-bold dark:text-light sm:text-sm">
             {title}
           </h2>
         </Link>
 
-        <p className="my-[8px] font-medium text-dark dark:text-light  ">
+        <p className="my-[8px] lg:mt-2px font-medium text-dark dark:text-light  ">
           {summary}
         </p>
 
@@ -71,9 +75,13 @@ const Project = ({ type, title, img, link, github }) => {
   return (
     <article
       className="w-full flex flex-col justify-between items-center rounded-2xl 
-    border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light "
+    border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light ia:mb-10 ia:p-4 
+    "
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light
+      ia:-right-2 ia:w-[101%] ia:h-[102%] xs:rounded-[24px]"
+      />
       <Link
         href={Link}
         target="_blank"
@@ -83,13 +91,13 @@ const Project = ({ type, title, img, link, github }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4 ">
-        <span className="text-primary font-medium text-xl  ">{type}</span>
+        <span className="text-primary font-medium text-xl xs:text-sm   ">{type}</span>
         <Link
           href={Link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-2xl font-bold dark:text-light">
+          <h2 className="my-2 w-full text-left text-2xl font-bold dark:text-light xs:text-base">
             {title}
           </h2>
         </Link>
@@ -119,30 +127,36 @@ const projects = () => {
         <title>Project Pages </title>
         <meta name="description" content="any description" />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className={`pt-16 `}>
-          <AnimatedText text="Imagination" className="flex justify-center " />
-          <PriAniText text="Trumps" className="flex justify-center " />
+          <ParticlesContainer className={`-z-50 `} />
+          <AnimatedText
+            text="Imagination"
+            className="flex justify-center lg:!text-6xl  sm:!text6xl xs:!text-4xl "
+          />
+          <PriAniText
+            text="Trumps"
+            className="flex justify-center lg:!text-6xl  sm:!text6xl xs:!text-4xl "
+          />
 
           <AnimatedText
             text="Knowledge!"
-            className="flex justify-center mb-12  "
+            className="flex justify-center mb-12 lg:!text-6xl sm:mb-8 sm:!text6xl xs:!text-4xl  "
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32">
-            <div className="col-span-12">
+          <div className="grid grid-cols-12  xl:gap-10 ia:gap-[1rem] gap-24 gap-y-32">
+            <div className="col-span-12 ">
               <FeaturedProject
                 title="Calculate Win Rate in MLBB"
                 img={sementaraG}
-                summary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                summary="Lorem Ipsum is simply dummy text of the printing and typesetting industry.  "
                 link="/"
                 github="/"
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Calculate Win Rate in MLBB"
                 img={sementaraG}
@@ -151,7 +165,7 @@ const projects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6  sm:col-span-12">
               <Project
                 title="Calculate Win Rate in MLBB"
                 img={sementaraG}
@@ -165,14 +179,13 @@ const projects = () => {
               <FeaturedProject
                 title="Calculate Win Rate in MLBB"
                 img={sementaraG}
-                summary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
-                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                summary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
                 link="/"
                 github="/"
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Calculate Win Rate in MLBB"
                 img={sementaraG}
@@ -181,7 +194,7 @@ const projects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Calculate Win Rate in MLBB"
                 img={sementaraG}

@@ -2,4 +2,19 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+:root {
+    --dark: #1b1b1b
+}
+
+/* Index */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.under-hero {
+    height: 100vh;
+    background-color: var(--dark);
+    width: 100%;
+    
+}
 

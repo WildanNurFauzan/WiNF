@@ -2,7 +2,9 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import "@/styles/globals.css";
 import "@/styles/footer.css";
+import "@/styles/contact.css";
 import { Montserrat, Silkscreen } from "next/font/google";
+
 
 const montserrat = Montserrat({
   subsets: ["latin"],

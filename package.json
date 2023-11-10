@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
+    "boxicons": "^2.1.4",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "feather-icons": "^4.29.1",

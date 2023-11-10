@@ -4,18 +4,12 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import contactImg from "../../public/images/svg/contact-img.svg";
 import Image from "next/image";
-import pixbg from "../../public/images/pixbg.jpg";
+
 import TransitionEffect from "@/components/TransitionEffect";
 // import AmogusParticles from "@/components/AmogusParticles";
 // import ConfettiParticles from "@/components/ConfettiParticles";
 
-const PixBG = () => {
-  return (
-    <>
-      <Image alt="bg" className="w-[100%] relative" src={pixbg} />
-    </>
-  );
-};
+
 
 const connect = () => {
   return (
@@ -24,9 +18,9 @@ const connect = () => {
         <title>WiNF | Connect Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <TransitionEffect/>
+      <TransitionEffect />
       <main>
-        <Layout className={`relative  ${pixbg}`}>
+        <Layout className={`relative bg-[url('/images/mountains.png')] bg-no-repeat bg-cover `}>
           {/* <div className="-z-999">
           <AmogusParticles />
           </div> */}
@@ -36,11 +30,15 @@ const connect = () => {
             className="flex justify-center mb-16 text-primary dark:text-cerah z-1"
           />
           <div className="flex relative  shadow-2xl rounded-br-2xl  rounded-3xl justify-center ">
-            <div className="absolute -top-[1.8px]  -left-[2px] -z-10 w-[102%] h-[105%] rounded-[3rem] bg-dark  dark:bg-cerah"  />
+            <div className="absolute -top-[1.8px]  -left-[2px] -z-10 w-[102%] h-[105%] rounded-[3rem] bg-dark  dark:bg-cerah" />
 
-            <div className="flex w-full  bg-[#B63E96] h-[50] pb-32 rounded-[3rem] pt-12 pl-16 relative">
+            <div
+              
+              className="flex w-full  bg-pixbg  h-[50] pb-32 rounded-[3rem] pt-12 pl-16 relative"
+            >
               <div className="w-[36rem] h-250   ">
                 <Image src={contactImg} alt="Gambar" className="w-full mt-4" />
+               
               </div>
 
               <div className="flex flex-col w-[24rem] h-auto mt-4  ">
@@ -65,8 +63,10 @@ const connect = () => {
                   Type Your Messages
                 </div>
 
-                <button className=" absolute bottom-24 right-[30.5rem] w-[6rem] p-3 bg-primary border-2  rounded-2xl cursor-pointer flex  items-center justify-center dark:bg-cerah 
-                hover:bg-white hover:scale-[120%] hover:duration-150 font-semibold dark:hover:bg-yellow-950 dark:hover:text-light">
+                <button
+                  className=" absolute bottom-24 right-[30.5rem] w-[6rem] p-3 bg-primary border-2  rounded-2xl cursor-pointer flex  items-center justify-center dark:bg-cerah 
+                hover:bg-white hover:scale-[120%] hover:duration-150 font-semibold dark:hover:bg-yellow-950 dark:hover:text-light"
+                >
                   Submit
                 </button>
               </div>
