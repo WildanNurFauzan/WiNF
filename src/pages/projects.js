@@ -157,6 +157,7 @@ const projects = () => {
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
+             
               <Project
                 title="Calculate Win Rate in MLBB"
                 img={sementaraG}

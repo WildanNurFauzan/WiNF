@@ -10,10 +10,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'pixbg': "url('/pixbg.jpg')",
+        pixbg: "url('/pixbg.jpg')",
         site: 'url("/site-bg.svg")',
       },
       fontFamily: {
+        pop: ["var(--font-poppins)"],
         montserrat: ["var(--font-montserrat)"],
         silkscreen: ["var(--font-silkscreen)"],
       },

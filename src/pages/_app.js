@@ -4,7 +4,21 @@ import "@/styles/globals.css";
 import "@/styles/footer.css";
 import "@/styles/contact.css";
 import { Montserrat, Silkscreen } from "next/font/google";
+import localFont from "next/font/local";
 
+const poppins = localFont({
+  src: [
+    {
+      path: "../../public/font/Poppins/Poppins-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "../../public/font/Poppins/Poppins-Bold.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-poppins",
+});
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -29,11 +43,11 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`${montserrat.variable} font-montserrat bg-light dark:bg-dark w-full min-h-screen`}
+        className={`${montserrat.variable} font-montserrat  bg-light dark:bg-dark w-full min-h-screen`}
       >
-        <NavBar  />
+        <NavBar />
         <AnimatePresence mode="wait">
-        <Component key={router.asPath} {...pageProps} />
+          <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
 
         <Footer />
