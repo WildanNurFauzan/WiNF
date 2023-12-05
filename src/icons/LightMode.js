@@ -7,15 +7,15 @@ const LightMode = () => {
         <g
           fill="none"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           stroke-width="2"
         >
-          <g stroke-dasharray="2">
+          <g strokeDasharray="2">
             <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
               <animate
                 fill="freeze"
-                attributeName="stroke-dashoffset"
+                attributeName="strokeDashoffset"
                 dur="0.2s"
                 values="4;2"
               />
@@ -23,7 +23,7 @@ const LightMode = () => {
             <path d="M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5">
               <animate
                 fill="freeze"
-                attributeName="stroke-dashoffset"
+                attributeName="strokeDashoffset"
                 begin="0.2s"
                 dur="0.2s"
                 values="4;2"

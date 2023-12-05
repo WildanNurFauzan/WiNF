@@ -67,8 +67,8 @@ const contact = () => {
                     class="w-6 h-6"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                     />
                   </svg>
@@ -81,7 +81,9 @@ const contact = () => {
                   target={"_blank"}
                   className={`z-10 flex justify-center !text-lg font-[200] mb-2 -ml-3 `}
                 >
-                  <span className="!text-lg xs:!text-sm">Vellvester@gmail.com</span>
+                  <span className="!text-lg xs:!text-sm">
+                    Vellvester@gmail.com
+                  </span>
                 </Link>
                 <Link href="/" className="z-10 flex justify-center pb-4 -ml-3 ">
                   <span className="text-lg">Write me</span>&nbsp;
@@ -110,8 +112,8 @@ const contact = () => {
                       x2="609.77"
                       y2="21.084"
                     >
-                      <stop offset="0" stop-color="#20b038" />
-                      <stop offset="1" stop-color="#60d66a" />
+                      <stop offset="0" stopColor="#20b038" />
+                      <stop offset="1" stopColor="#60d66a" />
                     </linearGradient>
                     <path
                       fill="#94db55"
@@ -145,7 +147,7 @@ const contact = () => {
                   target={"_blank"}
                   className={`z-10 flex justify-center text-lg font-[200] mb-2 -ml-3`}
                 >
-                  +62 xxx xxx xxx
+                  +62 xxx xxx xx9
                 </Link>
                 <Link href="/" className="z-10 flex justify-center pb-4 -ml-3 ">
                   <span>Write me</span>&nbsp;
@@ -169,13 +171,15 @@ const contact = () => {
                     class="w-6 h-6"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                     />
                   </svg>
                 </div>
-                <div className="z-10 text-lg text-center mb-2 -ml-3 text-cerah dark:text-primary">Email</div>
+                <div className="z-10 text-lg text-center mb-2 -ml-3 text-cerah dark:text-primary">
+                  Email
+                </div>
                 <Link
                   href="Vellvester@gmail.com"
                   target={"_blank"}
@@ -241,11 +245,6 @@ const contact = () => {
                 </span>
               </label>
 
-
-
-
-
-
               <div className="flex items-start justify-start md:justify-center w-[70%]">
                 <Link
                   href="/"
@@ -267,8 +266,8 @@ const contact = () => {
                     <path
                       fill="none"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       stroke-width="2"
                       d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
                     />

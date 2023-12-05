@@ -3,12 +3,7 @@ import React from "react";
 const DarkMode = () => {
   return (
     <>
-      <svg
-      
-        width="1em"
-        height="1em"
-        viewBox="0 0 24 24"
-      >
+      <svg width="1em" height="1em" viewBox="0 0 24 24">
         <rect
           x="0"
           y="0"
@@ -19,9 +14,9 @@ const DarkMode = () => {
         <g
           fill="none"
           stroke="currentColor"
-          stroke-dasharray="2"
-          stroke-dashoffset="2"
-          stroke-linecap="round"
+          strokeDasharray="2"
+          strokeDashoffset="2"
+          strokeLinecap="round"
           stroke-width="2"
         >
           <path d="M0 0">
@@ -34,7 +29,7 @@ const DarkMode = () => {
             />
             <animate
               fill="freeze"
-              attributeName="stroke-dashoffset"
+              attributeName="strokeDashoffset"
               begin="1.2s"
               dur="0.2s"
               values="2;0"
@@ -50,7 +45,7 @@ const DarkMode = () => {
             />
             <animate
               fill="freeze"
-              attributeName="stroke-dashoffset"
+              attributeName="strokeDashoffset"
               begin="1.5s"
               dur="1.2s"
               values="2;0"
@@ -86,8 +81,8 @@ const DarkMode = () => {
         <g
           fill="currentColor"
           stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           stroke-width="2"
         >
           <path d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z" />
